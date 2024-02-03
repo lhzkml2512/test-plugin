@@ -2,7 +2,7 @@
 /*
 Plugin Name: 测试插件
 Description: 用于测试WordPress插件开发的示例插件
-Version: 1.0
+Version: 1.01
 Author: 您的名字
 Author URI: 您的网站地址
 */
@@ -14,7 +14,7 @@ function get_plugin_version() {
 
 // 检查是否有新的发行版本可用
 function check_for_plugin_update() {
-    $api_url = 'https://api.github.com/repos/your-username/your-plugin-repo/releases/latest';
+    $api_url = 'https://github.com/hekailiu-2512/test-plugin/releases/tag/1.01';
     $response = wp_remote_get($api_url);
     
     if (is_wp_error($response)) {
@@ -63,7 +63,7 @@ function my_plugin_do_update() {
     
     if ($latest_version) {
         // 下载最新的发行版本文件
-        $download_url = 'https://github.com/your-username/your-plugin-repo/archive/' . $latest_version . '.zip';
+        $download_url = 'https://github.com/hekailiu-2512/test-plugin/releases/download/1.01/test-plugin-1.01.zip' . $latest_version . '.zip';
         $temp_file = download_url($download_url);
         
         if (is_wp_error($temp_file)) {
