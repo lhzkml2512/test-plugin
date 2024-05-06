@@ -2,7 +2,7 @@
 /*
 Plugin Name: 测试插件1
 Description: 用于测试WordPress插件开发的示例插件
-Version: 1.02
+Version: 1.01
 Author: 您的名字
 Author URI: 您的网站地址
 */
